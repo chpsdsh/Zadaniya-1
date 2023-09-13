@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+    float flour,flats,podezd,nom,n_podezda,e_kvartiry;
+    scanf_s("%f %f",&flour,&flats);
+    scanf_s("%f",&nom);
+    podezd=flour*flats;//колво хат
+    n_podezda=ceil(nom/podezd);
+    printf("%d\n",(int)n_podezda);
+    e_kvartiry=ceil((nom-(n_podezda-1)*flats*flour)/flats);
+    printf("%d",(int)e_kvartiry);
+    return(0);
+}
