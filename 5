@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <math.h>
 int main() {
-    float y,z,g, interval=M_PI*2;
+    float y,hour,minute;
     scanf_s("%f",&y);
-    g=y*180/M_PI;
-    printf(" Chasovaya %f\n",g/30);
-    z=;
-    printf("Minuty %f",z/0.5);
+    hour=y*180/M_PI/30;
+    printf(" Chasovaya %d\n",(int)hour);
+    int c_hour=(int)hour;
+    minute=(hour-c_hour)*60;
+    printf("Minuty %d\n",(int)minute);
+    printf("Gradus %d",(int)(6*minute));
     return(0);
 }
