@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    float a,b,c;
+    scanf_s("%f", &a);
+    a=a*a;//2
+    a=a*a;//4
+    b=a;
+    a=a*a;//8
+    c=a;
+    a=a*a;//16
+    a=a*b*c;
+    printf("%f",a);
+    return(0);
+}
