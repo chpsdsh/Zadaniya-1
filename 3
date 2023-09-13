@@ -1,7 +1,11 @@
 #include <stdio.h>
 int main() {
     int a1,a2,a3,b1,b2;
+    int r1,r2,r3;
     scanf_s("%d %d %d %d %d",&a3,&a2,&a1,&b2,&b1);
-    printf("%d %d %d",a3+(a2+b2+(a1+b1)/10)/10,(a2+b2+(a1+b1)/10)%10,(a1+b1)%10);
+    r1=a3+(a2+b2+(a1+b1)/10)/10;
+    r2=(a2+b2+(a1+b1)/10)%10;
+    r3=(a1+b1)%10;
+    printf("%d %d %d",r1,r2,r3);
     return(0);
 }
